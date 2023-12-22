@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
+  background-color:#F4F5F8;
   margin: 0;
   font-family: "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;

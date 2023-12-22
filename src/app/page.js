@@ -2,8 +2,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-// css
-
 // components
 import Header from "./components/Header";
 import Group from "./components/Group";
@@ -41,7 +39,7 @@ const [ordering, setOrdering] = useState(() => {
 
   useEffect(() => {
     axios
-      .get("https://api.quicksell.co/v1/internal/frontend-assignment")
+      .get("https://tfyincvdrafxe7ut2ziwuhe5cm0xvsdu.lambda-url.ap-south-1.on.aws/ticketAndUsers")
       .then((res) => {
         setUsers(res.data.users);
         const p = {};
@@ -86,7 +84,7 @@ const [ordering, setOrdering] = useState(() => {
   }, [grouping, byPriority, byUser, byStatus]);
 
   return (
-    <body className="bg-gray-200">
+    <body>
       <Header
         grouping={grouping}
         setGrouping={setGrouping}
