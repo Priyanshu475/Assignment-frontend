@@ -36,8 +36,8 @@ const Group = ({ tasks, name, width, users, grouping, ordering }) => {
         {grouping === 2 && priorityIcons(name)}
         <span className="text-medium font-bold" style={{ color:"#373737" }}>{name}</span>
         <span className="text-gray-600 flex-grow">{tasks.length}</span>
-        <AddIcon className="text-gray-600 text-sm" />
-        <MoreHorizIcon className="text-gray-600 text-sm" />
+        <AddIcon className="text-gray-600 text-xs" />
+        <MoreHorizIcon className="text-gray-600 text-xs" />
       </header>
       {tasks.map((task, id) => {
         return (
