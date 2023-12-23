@@ -80,18 +80,18 @@ export const priorityIcons = (priority) => {
       )
     }
     return(
-      <svg
-    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-    focusable="false"
-    aria-hidden="true"
-    viewBox="0 0 24 24"
-    data-testid="ErrorIcon"
-    height="1em"
-    width="1em"
-    style={{ color: 'orange' }}
-  >
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path>
-  </svg>
+   <svg stroke="currentColor" 
+     fill="currentColor" 
+     stroke-width="0" 
+     viewBox="0 0 16 16"
+     class="icon" 
+     height="1em" 
+     width="1em" 
+     xmlns="http://www.w3.org/2000/svg"
+     style="color: rgb(245, 138, 66);">
+     <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+     </path>
+    </svg>
     )
   };
   
