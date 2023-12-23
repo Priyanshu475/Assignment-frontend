@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "./Card";
 
+import AddIcon from "@mui/icons-material/Add";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { priorityIcons, progressIcons } from "./Icons";
 import Avatar from "./Avatar";
 
@@ -23,18 +25,20 @@ const Group = ({ tasks, name, width, users, grouping, ordering }) => {
 
   return (
     <div
-      className="flex flex-col Group"
+      className="flex flex-col Group m-1.4"
       style={{ width: `${width}%`, minWidth: "300px", flexGrow: 1 }}
     >
-      <header className="flex gap-4 items-center Group__header">
+      <header className="flex gap-4 items-center Group__header mb-3">
         {grouping === 0 && progressIcons(name)}
         {grouping === 1 && (
           <Avatar initial={initial} id={userId} available={user.available} />
         )}
         {grouping === 2 && priorityIcons(name)}
-        <span className="text-medium font-bold" style={{ color:"#373737" }}>{name}</span>
+        <span className="text-medium font-semibold" style={{ color: "#373737" }}>
+          {name}
+        </span>
         <span className="text-gray-600 flex-grow">{tasks.length}</span>
-          <svg
+        <svg
           stroke="currentColor"
           fill="currentColor"
           stroke-width="0"
