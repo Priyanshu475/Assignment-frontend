@@ -1,8 +1,6 @@
 import React from "react";
 import Card from "./Card";
 
-import AddIcon from "@mui/icons-material/Add";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { priorityIcons, progressIcons } from "./Icons";
 import Avatar from "./Avatar";
 
@@ -36,8 +34,33 @@ const Group = ({ tasks, name, width, users, grouping, ordering }) => {
         {grouping === 2 && priorityIcons(name)}
         <span className="text-medium font-bold" style={{ color:"#373737" }}>{name}</span>
         <span className="text-gray-600 flex-grow">{tasks.length}</span>
-        <AddIcon style={{height:"1em",width:"1em"}} className="text-gray-600 text-xs h-4 w-4" />
-        <MoreHorizIcon style={{height:"1em",width:"1em"}} className="text-gray-600 text-xs h-4 w-4" />
+          <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          class="icon"
+          height="1em"
+          width="1em"
+          style={{ color: 'gray' }}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+        </svg>
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 16 16"
+          class="icon"
+          height="1em"
+          width="1em"
+          style={{ color: 'gray' }}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
+        </svg>
       </header>
       {tasks.map((task, id) => {
         return (
