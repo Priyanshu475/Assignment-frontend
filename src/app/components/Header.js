@@ -14,7 +14,7 @@ const Header = ({ grouping, setGrouping, ordering, setOrdering }) => {
   return (
     <div className="Header h-16 bg-white border-b-2 border-gray-300 p-2 flex justify-between items-center relative">
       <button
-        className="Display__button h-7 bg-white border border-gray-300 rounded-md px-6 font-semibold text-gray-600 cursor-pointer transition duration-300 ease-in-out flex items-center gap-1"
+        className="Display__button h-7 bg-white border border-gray-300 rounded-md px-6 font-normal text-gray-600 cursor-pointer transition duration-300 ease-in-out flex items-center gap-1"
         onClick={() => {
           setOpen1((e) => !e);
           setOpen2(false);
