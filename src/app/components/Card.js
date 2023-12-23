@@ -15,9 +15,9 @@ const Card = ({ data, user, grouping }) => {
     : "initial";
 
   return (
-    <div className="Card bg-white p-2 rounded-md min-h-30 m-1 relative inline-flex flex-col shadow-md transition-all duration-300 ease">
+    <div className="Card bg-white p-3.5 rounded-md min-h-30 m-1.5 relative inline-flex flex-col shadow-md transition-all duration-300 ease">
       <header className="Card__header text-lg font-semibold m-0 flex items-center justify-between">
-        <span className="text-gray-600 text-md font-normal">{id}</span>
+      <span className="text-gray-400" style={{ fontWeight: '500', fontSize: '0.875rem' }}>{id}</span>
         {grouping !== 1 && <Avatar initial={initial} available={user.available} id={userId} />}
       </header>
       <section className="flex-1 flex gap-4 items-center">
